@@ -1,0 +1,9 @@
+{
+  "name": "copperjack",
+  "version": "1.0.0",
+  "description": "Connect CopperJack with optional task briefing and ARV beta skills.",
+  "author": {
+    "name": "CopperJack"
+  },
+  "homepage": "https://copperjack.com"
+}
