@@ -1,9 +1,12 @@
 {
   "name": "copperjack",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Connect CopperJack with optional task briefing and ARV beta skills.",
   "author": {
     "name": "CopperJack"
   },
-  "homepage": "https://copperjack.com"
+  "homepage": "https://copperjack.com",
+  "icon": "./assets/icon.png",
+  "privacyPolicyUrl": "https://copperjack.com/privacy",
+  "license": "MIT"
 }

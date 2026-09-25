@@ -26,3 +26,14 @@ deals are not supported. ARV beta results vary by model and effort and can
 contain factual or reasoning errors. The skill does not save or change your
 property's ARV. It can explain when there is insufficient evidence for an
 estimate.
+
+## License
+
+This plugin is available under the [MIT License](LICENSE).
+
+CopperJack and the CopperJack logo are trademarks of Left Hand Loop LLC.
+The MIT License does not grant trademark rights. CopperJack's hosted service
+is governed by its own terms; this license does not grant access to the service
+or its data.
+
+[Privacy policy](https://copperjack.com/privacy)
