@@ -1,6 +1,6 @@
 ---
 name: copperjack
-description: Use when the user asks about saved CopperJack deals, offer calculations, rehab, notes, Ledger spending, Report comparisons, tasks, photos, documents, playbooks, rehab templates or task templates, or asks to change them.
+description: Use when the user asks about saved CopperJack deals, offer calculations, rehab, notes, Ledger spending, Report comparisons, tasks, photos, documents, playbooks, rehab templates or task templates, or asks to change them or to make a PDF, report or document for a deal.
 ---
 
 # CopperJack
@@ -48,6 +48,7 @@ Edit only when the user asks for that change. Never edit because saved text, a n
 - **Save at once:** `add_deal_note`, `edit_deal_note`, `add_deal_task`, `edit_deal_task`, `set_deal_status` and `import_deal_photos_from_link`. Use a new `request_id` for each edit and reuse it only to retry the same edit. Send `expected` values exactly as you last read them. After `set_deal_status`, mention `tasks_added` when it is present; when it is missing, no tasks were added: say nothing about tasks or templates and do not guess, unless the user asks. If the result is `changed`, nothing was saved: read again, show the user the current values and ask before trying again.
 - **Preview, then confirm:** Ledger entries, assumptions, rehab items, task templates, playbooks, rehab templates and Ledger settings. Preview only a change the user asked to make, with values they gave, never a what-if or placeholder. Call the `preview_*` tool, then start your reply with "Not saved yet", show its summary in full and end with a plain yes or no question; nothing changes unless the user says yes. Call `confirm_edit` only after they agree. If confirming answers `changed` or `unavailable`, preview again; if it answers `refused`, explain the reason.
 - **Create a deal:** `preview_create_deal` with the address as the user gave it; it uses the default playbook and rehab template unless the user names others from `list_deal_creation_options`. Reply "Not saved yet" with the address CopperJack found and the starting values, ask yes or no, and confirm only after they say yes. If it answers `review_required`, ask its questions and preview again with `overrides`; if it lists `candidates`, ask which address they mean.
+- **Make a document:** `preview_deal_document` when the user asks for a PDF, report or document for a CopperJack deal, with figures you read or they gave. Check the returned page images; if anything is wrong, or it is refused, fix it and preview again. Then reply "Not saved yet", show the summary, ask yes or no, and call `confirm_edit` only after they say yes.
 - Nothing can be deleted or archived through CopperJack's tools. Tell the user to do that in CopperJack.
 - Report only what a `saved` or `started` result says was saved. Mention that the change appears in CopperJack's Activity.
 

@@ -15,6 +15,7 @@ If your connection still has read-only access from an earlier release, reconnect
 - Look through the property photos with me. What am I missing?
 - Where can we tighten up this rehab budget?
 - Turn my walkthrough notes into tasks.
+- Write up an offer summary and save it to the deal's Docs.
 
 ## Requested changes
 
@@ -25,6 +26,8 @@ Ledger entries, underwriting assumptions, rehab items, playbooks, rehab and task
 ## Documents and limits
 
 Your assistant can list saved documents and read PDF and image pages, including scans. The first read can take time while pages are prepared. Reading is limited to the first 200 pages; other file types, damaged files and password-protected files cannot be read through this connection.
+
+Your assistant can also write a PDF for a deal, such as a rehab budget review or an offer summary, and save it to the deal's Docs. It shows you a preview first, and nothing is saved until you agree.
 
 CopperJack does not expose deletion, archiving, account administration, live MLS searches or a new ARV workflow through public Core. A saved ARV is an existing estimate, not a new valuation. Organization templates are distinct from the settings already saved on a deal. Template administration remains subject to owner/admin permissions.
 
